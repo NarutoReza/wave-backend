@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3</title>
+    
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- font-awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<style>
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: aquamarine;
+    }
+
+    .header .brand{
+        font-size: 25px;
+    }
+
+    .header .lists ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .header .lists ul li{
+        list-style-type: none;
+        padding: 0px 10px;
+    }
+
+    .header .lists ul li a{
+        color: black;
+    }
+
+    .main-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main-box h4{
+        font-size: 35px;
+    }
+    
+    .main-box .btns{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .main-box .btns button{
+        border: 0;
+        outline: 0;
+        border-radius: 7px 0 0 7px;
+        background-color: rgb(139, 193, 191);
+        color: white;
+        padding: 5px 10px;
+    }
+
+    .main-box .btns button:last-child{
+        background-color: rgb(101, 127, 222);
+        border-radius: 0 7px 7px 0;
+    }
+
+    .main-box .input{
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-box .input input{
+        border-radius: 6px 0 0 6px;
+        border: 1px solid black;
+        height: 40px;
+        font-size: 20px;
+        padding-left: 15px;
+    }
+
+    .main-box .input button{
+        border-radius: 0 6px 6px 0;
+        border: 1px solid black;
+        height: 40px;
+        width: 120px;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <div class="header">
+        <div class="brand">page3</div>
+
+        <div class="lists">
+            <ul>
+                <li><a>Domains</a></li>
+                <li><a>Hosting</a></li>
+                <li><a>WordPress</a></li>
+                <li><a>Email</a></li>
+                <li><a>Marketing Tools</a></li>
+                <li><a>Security</a></li>
+                <li><a>Transfer to Us</a></li>
+                <li><a>Help Center</a></li>
+                <li><a>Account</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-box">
+        <h4>Make more online, for less</h4>
+
+        <div class="btns">
+            <button>Register</button>
+            <button>Transfer</button>
+        </div>
+
+        <div class="input">
+            <input type="text" placeholder="Enter your text" />
+            <button>Search</button>
+        </div>
+    </div>
+</body>
+</html>

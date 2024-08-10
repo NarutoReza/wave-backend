@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- font-awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<style>
+    .top-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(0, 119, 104);
+        height: 30px;
+    }
+
+    .contact a{
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .social a{
+        color: white;
+        font-size: 18px;
+        padding: 0px 7px;
+        cursor: pointer;
+    }
+
+    .main-body{
+        background-color: rgb(0, 131, 116);
+        height: 100%;
+    }
+
+    .sec-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sec-nav .brand{
+        font-size: 30px;
+        color: white;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+    .sec-nav .lists{
+        color: white;
+    }
+
+    .sec-nav .lists ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .sec-nav .lists ul li{
+        list-style-type: none;
+        padding: 1px 5px;
+        cursor: pointer;
+    }
+
+    .sec-nav .lists ul li a{
+        color: white;
+    }
+
+    .page .contents{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .page .contents h2{
+        color: white;
+    }
+
+    .page .contents p{
+        text-align: justify;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .page .contents .btn{
+        display: flex;
+        justify-content: center;
+    }
+
+    .page .contents .btn .start{
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+
+    .page .contents .btn .video{
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        margin-left: 10px;
+        color: white;
+        font-size: 15px;
+    }
+
+    .page .col-sm-6 img{
+        width: 100%;
+    }
+</style>
+
+<body>
+    <div class="top-nav">
+        <div class="contact">
+            <a><i class="fa-solid fa-envelope"></i> Email</a>
+            <a><i class="fa-solid fa-mobile-screen-button"></i> Phone</a>
+        </div>
+
+        <div class="social">
+            <a><i class="fa-brands fa-x-twitter"></i></a>
+            <a><i class="fa-brands fa-facebook"></i></a>
+            <a><i class="fa-brands fa-instagram"></i></a>
+            <a><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div class="sec-nav">
+            <div class="brand">Impact</div>
+
+            <div class="lists">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Team</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Dropdown</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page container">
+            <div class="contents col-sm-6">
+                <h2>Welcome to Page 2</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                <div class="btn">
+                    <button class="start">Get Started</button>
+                    <button class="video"><i class="fa-solid fa-circle-play"></i> Watch Video</button>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img src="http://localhost:8080/images/man.png" alt="image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- font-awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    .header{
+        background-color: whitesmoke;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 5px;
+    }
+
+    .top-head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .brand{
+        font-size: 25px;
+        color: blue;
+        margin-left: 50px;
+    }
+
+    .social ul{
+        display: flex;
+    }
+
+    .social ul li{
+        list-style-type: none;
+        padding: 0px 7px;
+        cursor: pointer;
+    }
+
+    .social ul li a{
+        color: grey;
+    }
+
+    .bottom-head{
+        border-bottom: 1px solid black;
+    }
+
+    .bottom-head ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1000px;
+    }
+
+    .bottom-head ul li{
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    .bottom-head ul li a{
+        color: black;
+    }
+
+    .image img{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .main-photo h6{
+        text-transform: uppercase;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .main-photo h1{
+        font-family: "Roboto", sans-serif;
+    }
+
+    .main-photo p{
+        font-family: "Roboto", sans-serif;
+    }
+
+    .main-photo button{
+        font-family: "Roboto", sans-serif;
+        background-color: rgb(45, 118, 219);
+        border: 0;
+        padding: 5px 8px;
+        outline: 0;
+        color: white;
+    }
+
+    @media screen and (max-width: 500px){
+        .brand{
+            font-size: 20px;
+            color: blue;
+            margin-left: 0px;
+        }
+            
+        .bottom-head ul{
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+</style>
+
+<body>
+    <div class="header conatiner">
+        <div class="top-head col-sm-12">
+            <div class="brand">Page 1</div>
+            <div class="social">
+                <ul>
+                    <li><a><i class="fa-solid fa-message"></i> Chat</a></li>
+                    <li><a>Call <i class="fa-solid fa-caret-down"></i></a></li>
+                    <li><a><i class="fa-solid fa-user"></i> Login</a></li>
+                    <li><a>USD</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bottom-head col-sm-12">
+            <ul>
+                <li><a>Wordpress</a></li>
+                <li><a>Hosting</a></li>
+                <li><a>Domains</a></li>
+                <li><a>Online Store</a></li>
+                <li><a>Professional Services</a></li>
+                <li><a>Email</a></li>
+                <li><a>Affiliates</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-body container">
+        <div class="main-photo col-sm-6">
+            <h6>Website Hosting</h6>
+
+            <h1>A home for your website.</h1>
+
+            <p>Before you write your first post, share your first photo or sell your first product, your website needs to get online. Hosting is your website's connection to the world.</p>
+
+            <button>Get Started</button>
+        </div>
+        
+        <div class="image col-sm-6">
+            <img src="http://localhost:8080/images/web.jpeg" alt="image" />
+        </div>
+    </div>
+</body>
+</html>
